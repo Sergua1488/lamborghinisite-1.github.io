@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #000, #1a1a1a);
+  padding: 40px 20px;
+  border-bottom: 3px solid gold;
+}
+
+header h1 {
+  color: gold;
+  font-size: 40px;
+  text-shadow: 0 0 15px rgba(255, 251, 0, 1);
+}
+
+header p {
+  max-width: 700px;
+  margin: 10px auto;
+  opacity: 0.8;
+}
+
+nav a {
+  margin: 15px;
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 300ms;
+}
+
+nav a:hover {
+  color: white;
+  border-bottom: 2px solid gold;
+}
+
+.models {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.lambo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.lambo_card {
+  background: #141414;
+  border: 1px solid #222;
+  border-radius: 15px;
+  padding: 15px;
+  transition: 300ms;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+}
+
+.lambo_card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+.lambo_card img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.lambo_card h3 {
+  color: gold;
+  margin-top: 10px;
+}
+
+.lambo_card p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.lambo_card span {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.register,
+.reviews {
+  text-align: center;
+  padding: 50px 10px;
+  background-color: #111;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 200px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid gold;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+}
+
+form button {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+form button:hover {
+  background: #ffcc00;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  background: #000;
+  padding: 30px 15px;
+  border-top: 2px solid gold;
+}
+
+footer p {
+  opacity: 0.8;
+}
+
+.delete-btn {
+  background: #ff4444;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 300ms;
+}
+
+.delete-btn:hover {
+  background: #ff0000;
+  transform: scale(1.05);
+}
+
+.buy {
+  padding: 15px;
+  background-color: gold;
+  border-radius: 10px;
+}
+
+.buy:hover {
+  background-color: goldenrod;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav a {
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .lambo_card img {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .lambo_card p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .models h2,
+  .register h2,
+  .reviews h2,
+  footer h2 {
+    font-size: 22px;
+  }
+
+  .lambo-container {
+    grid-template-columns: 1fr;
+  }
+
+  .lambo_card {
+    padding: 20px;
+  }
+
+  .lambo_card img {
+    width: 100%;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 90%;
+  }
+
+  .review {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .lambo_card p {
+    font-size: 16px;
+  }
+
+  .buy {
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}

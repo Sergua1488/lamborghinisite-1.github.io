@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lamborghini Showcase</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lamborghini – скорость, ставшая искусством</h1>
+      <p>
+        Добро пожаловать в мир, где мощь сочетается с элегантностью, а каждая
+        деталь создана для совершенства.
+      </p>
+      <nav>
+        <a href="#models">Модели</a>
+        <a href="#register">Регистрация</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </header>
+    <section id="models" class="models">
+      <h2>Выбери свой Lamborghini</h2>
+      <div class="lambo-container">
+        <div class="lambo_card">
+          <img src="./img/hq720.jpg" alt="Huracan" />
+          <h3>Huracan</h3>
+          <p>
+            Спортивное купе с V10 двигателем. Идеальный баланс технологий и
+            эмоций.
+          </p>
+        </div>
+        <div class="lambo_card">
+          <img src="./img/2021-Lamborghini-Urus-1B_o.jpg" alt="Urus" />
+          <h3>Urus</h3>
+          <p>
+            Роскошный SUV с сердцем суперкара. Мощь, комфорт и уверенность на
+            дороге.
+          </p>
+        </div>
+        <div class="lambo_card">
+          <img src="./img/COVER_Aventador_v2.webp" alt="Aventador" />
+          <h3>Aventador</h3>
+          <p>
+            Флагман Lamborghini с двигателем V12 и культовыми дверями
+            "ножницами".
+          </p>
+        </div>
+        <div class="lambo_card">
+          <img
+            src="./img/ResMo_Lambo_Gallardo_Shoot_Sharplite-71-tiny-2048x0-0.5x0.jpg"
+            alt="Gallardo"
+          />
+          <h3>Gallardo</h3>
+          <p>Историческая модель, подарившая начало новой эре Lamborghini.</p>
+        </div>
+        <div class="lambo_card">
+          <img src="./img/feeltheengine-mobile.webp" alt="Sian" />
+          <h3>Sián</h3>
+          <p>
+            Гибридный суперкар лимитированной серии. Искусство инженерии и
+            дизайна.
+          </p>
+        </div>
+        <div class="lambo_card">
+          <img src="./img/IMG_2117-scaled.jpg" alt="Revuelto" />
+          <h3>Revuelto</h3>
+          <p>
+            Новейший V12-гибрид Lamborghini. Энергия будущего с мощью классики.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="register" class="register">
+      <h2>Зарегистрируйся и стань частью клуба Lamborghini</h2>
+      <form id="registerForm">
+        <input type="text" id="name" placeholder="Имя" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Пароль"
+          minlength="6"
+          required
+        />
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+      <p id="successMessage"></p>
+    </section>
+    <footer id="contacts">
+      <h2>Свяжись с нами</h2>
+      <p><b>Email:</b> sergua1488@gmail.com</p>
+      <p><b>Телефон:</b> +7 708 931 1031</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
